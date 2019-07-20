@@ -9,7 +9,5 @@ using Mux
   page("/user/:user", req -> "<h1>Hello, $(req[:params][:user])!</h1>"),
   Mux.notfound())
 
-serve(test)
-
 fetch(serve(test,parse(Int,ARGS[1])))
 
