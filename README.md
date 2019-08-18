@@ -7,7 +7,7 @@ A sample project to deploy julia on heroku using [julia-buildpack](https://githu
 ```
 git clone https://github.com/Optomatica/heroku-julia-sample.git
 cd heroku-julia-sample
-HEROKU_APP_NAME=genie-buildpack
+HEROKU_APP_NAME=my-app-name
 heroku create $HEROKU_APP_NAME --buildpack https://github.com/Optomatica/heroku-buildpack-julia.git
 git push heroku master
 heroku open -a $HEROKU_APP_NAME
