@@ -17,6 +17,6 @@ heroku open -a $HEROKU_APP_NAME
 
 If the julia script exits, then the app will shutdown.
 
-This app accomplishes a synchronous (blocking) call to Mux.jl's `serve` with `fetch(serve(test,parse(Int,ARGS[1])))`. This ensures `julia app.jl $port` does not quit just after starting about the web server.
+This app accomplishes a synchronous (blocking) call to Mux.jl's `serve` with `fetch(serve(test,parse(Int,ARGS[1])))`. This ensures `julia app.jl $PORT` does not quit just after starting about the web server.
 
 If you use another web framework, make sure their `serve` call also works synchronously.
